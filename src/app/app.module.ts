@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core'; // Angular core module
 import { BrowserModule } from '@angular/platform-browser'; // Angular platform module
 
 import { AppComponent } from './app.component'; // Import the app component
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({ // @NgModule decorator
   declarations: [ // The components that belong to this module
-    AppComponent
+    AppComponent,
+    CounterComponent
   ],
   imports: [ // The modules that belong to this module
     BrowserModule
