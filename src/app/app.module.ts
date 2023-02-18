@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser'; // Angular platform m
 
 import { AppComponent } from './app.component'; // Import the app component
 import { CounterComponent } from './counter/counter.component';
+import { HeroeComponent } from './heroes/heroe/heroe.component';
+import { ListadoComponent } from './listado/listado.component';
 
 @NgModule({ // @NgModule decorator
   declarations: [ // The components that belong to this module
     AppComponent,
-    CounterComponent
+    CounterComponent,
+    HeroeComponent,
+    ListadoComponent,
   ],
   imports: [ // The modules that belong to this module
     BrowserModule

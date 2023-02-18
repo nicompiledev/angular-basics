@@ -1,0 +1,17 @@
+<div class="main-container">
+  <h1>{{ heroNameCapitalized }}</h1>
+
+  <dl>
+  <td>Name:</td>
+  <dd> {{heroName}}</dd>
+  <br>
+  <td>realName: </td>
+  <dd> {{realName}}</dd>
+  <br>
+  <td>Age: </td>
+  <dd> {{age}}</dd>
+  <br>
+  <button (click)="changeName()">Change Hero</button>
+  <button (click)="changeAge()">Change Age</button>
+</dl>
+</div>

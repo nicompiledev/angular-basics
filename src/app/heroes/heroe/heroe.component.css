@@ -1,0 +1,25 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  max-height: fit-content;
+  max-width: 300px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: auto; /* Añade este margen para centrar horizontalmente el contenedor */
+}
+
+
+
+dl {
+  display: inline-block;
+  margin-left: 20px; /* opcional, agrega un margen a la izquierda */
+}
+
+
+button{
+  margin-right: 10px;
+}
