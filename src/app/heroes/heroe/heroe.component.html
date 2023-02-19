@@ -1,0 +1,51 @@
+<div class="main-container">
+  <h1>{{ heroNameCapitalized }}</h1>
+
+<dl>
+  <td> Nombre: </td>
+  <dd> {{ heroName }}</dd>
+  <br>
+  <td> Nombre Real: </td>
+  <dd> {{ realName }}</dd>
+  <br>
+  <td> Edad: </td>
+  <dd> {{ age }} </dd>
+  <br>
+  <div *ngIf="heroes.length > 0; else noQueda">
+    <td>Otros heroes: </td>
+    <ul>
+      <li *ngFor="let heroe of heroes">
+        {{heroe}}
+      </li>
+    </ul>
+  </div>
+  <ng-template #noQueda>
+    <td>No quedan heroes</td>
+  </ng-template>
+
+
+  <br>
+  <div *ngIf="heroesBorrados.length > 0; else noHanBorrado">
+    <td>Heroes Borrados: </td>
+    <ul>
+      <li *ngFor="let heroe of heroesBorrados">
+        {{ heroe }}
+      </li>
+    </ul>
+    <br>
+  </div>
+  <ng-template #noHanBorrado>
+    <td>No han borrado heroes</td>
+  </ng-template>
+  <br>
+
+  <button (click)="borrarHeroe()">Borrar Heroe</button>
+
+  <button (click)="changeHeroName()">Cambiar Héroe</button>
+
+  <button (click)="changeAge()">Cambiar Edad</button>
+
+
+</dl>
+
+</div>
