@@ -4,19 +4,22 @@ import { BrowserModule } from '@angular/platform-browser'; // Angular platform m
 
 import { AppComponent } from './app.component'; // Import the app component
 
-import { CounterComponent } from '../app/counter/counter.component';
-import { HeroeComponent } from './heroes/heroe/heroe.component';
+import { CounterComponent } from './counters/counter/counter.component';
+import { HeroesModule } from './heroes/heroe/heroes.module';
+import { CounterModule } from './counters/counter/counter.module';
+
 
 
 
 @NgModule({ // @NgModule decorator
   declarations: [ // The components that belong to this module
-    AppComponent,
-    CounterComponent,
-    HeroeComponent
+    AppComponent
+
   ],
   imports: [ // The modules that belong to this module
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    CounterModule
   ],
   providers: [], // The services that belong to this module
   bootstrap: [AppComponent] // The root component that Angular creates and inserts into the index.html host web page

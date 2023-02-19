@@ -5,6 +5,7 @@
   justify-content: center;
   padding-top: 15px;
   font-family: Lato, sans-serif;
+  background-color: cadetblue;
 }
 
 
@@ -33,10 +34,11 @@ p {
   color: #fff;
   padding: 25px;
   display: flex;
+  margin: 35px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 8px solid #fff;
+  border: 2px solid #fff;
   font-size: 160px;
   margin-bottom: 15px;
 }
