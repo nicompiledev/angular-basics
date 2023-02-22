@@ -1,0 +1,8 @@
+<h3>Gastos</h3>
+<hr>
+<ul *ngIf="personajes.length">
+    <li *ngFor="let personaje of personajes">
+        {{ personaje.nombre | uppercase }} - ${{ personaje.poder | number }}
+    </li>
+</ul>
+<p *ngIf="!personajes.length">No hay gastos registrados aún</p>
