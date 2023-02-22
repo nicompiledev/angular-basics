@@ -14,6 +14,8 @@ export class AgregarComponent {
     poder: 0
   }
 
+  totalPoder: number = 0;
+
   constructor( private dbzService: DbzService ) {}
 
   // @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
@@ -28,6 +30,8 @@ export class AgregarComponent {
       nombre: '',
       poder: 0
     }
+
+    this.totalPoder = this.dbzService.personajes.reduce( ( acc, personaje ) => acc + personaje.poder, 0 );
 
   }
 }
