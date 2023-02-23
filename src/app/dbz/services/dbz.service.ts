@@ -11,10 +11,11 @@ export class DbzService {
         return [...this._personajes];
     }
 
-    constructor() {}
+    //Este constructor no esta cumpliendo ninguna funcion
+    // constructor() {}
 
     agregarPersonaje( personaje: Personaje ) {
-        
+
         this._personajes.push( personaje );
     }
 
