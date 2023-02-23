@@ -14,6 +14,7 @@ export class DbzService {
     constructor() {}
 
     agregarPersonaje( personaje: Personaje ) {
+        
         this._personajes.push( personaje );
     }
 
